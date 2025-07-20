@@ -1,10 +1,17 @@
 import React from "react";
-import ReactDom from "react-dom/client";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 import App from "./App";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Products from "./pages/products";
 
-const root = ReactDom.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="'products" element={<Products />} />
+    </Routes>
+  </BrowserRouter>
 );
