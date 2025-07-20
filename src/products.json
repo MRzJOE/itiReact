@@ -1,0 +1,204 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Organic Apples",
+      "category": "Fruits",
+      "price": 4.99,
+      "stock": 150,
+      "rating": 4.7,
+      "description": "A bag of fresh, crisp, and juicy organic Gala apples, perfect for snacking or baking.",
+      "image": "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 2,
+      "name": "Sourdough Bread",
+      "category": "Bakery",
+      "price": 5.5,
+      "stock": 75,
+      "rating": 4.9,
+      "description": "Artisan-baked sourdough loaf with a chewy crust and soft, airy interior.",
+      "image": "https://images.pexels.com/photos/416471/pexels-photo-416471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 3,
+      "name": "Free-Range Eggs",
+      "category": "Dairy & Eggs",
+      "price": 3.99,
+      "stock": 200,
+      "rating": 4.8,
+      "description": "One dozen large brown eggs from free-range chickens.",
+      "image": "https://images.pexels.com/photos/162712/egg-white-food-protein-162712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 4,
+      "name": "Grass-Fed Ground Beef",
+      "category": "Meat",
+      "price": 9.99,
+      "stock": 60,
+      "rating": 4.6,
+      "description": "1 lb of 85% lean ground beef from grass-fed cattle. No added hormones or antibiotics.",
+      "image": "https://images.pexels.com/photos/6517342/pexels-photo-6517342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 5,
+      "name": "Wild-Caught Salmon",
+      "category": "Seafood",
+      "price": 14.25,
+      "stock": 40,
+      "rating": 4.9,
+      "description": "Fresh, wild-caught Atlantic salmon fillet, rich in Omega-3s.",
+      "image": "https://images.pexels.com/photos/840313/pexels-photo-840313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 6,
+      "name": "Organic Baby Spinach",
+      "category": "Vegetables",
+      "price": 3.5,
+      "stock": 90,
+      "rating": 4.5,
+      "description": "A 5 oz container of pre-washed, organic baby spinach.",
+      "image": "https://images.pexels.com/photos/2325843/pexels-photo-2325843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 7,
+      "name": "Almond Milk",
+      "category": "Dairy Alternatives",
+      "price": 3.2,
+      "stock": 110,
+      "rating": 4.4,
+      "description": "Unsweetened almond milk, a great dairy-free alternative for cereals and coffee.",
+      "image": "https://images.pexels.com/photos/4047144/pexels-photo-4047144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 8,
+      "name": "Whole Wheat Pasta",
+      "category": "Pantry",
+      "price": 2.5,
+      "stock": 300,
+      "rating": 4.6,
+      "description": "16 oz box of whole wheat spaghetti, high in fiber.",
+      "image": "https://images.pexels.com/photos/1487511/pexels-photo-1487511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 9,
+      "name": "Greek Yogurt",
+      "category": "Dairy & Eggs",
+      "price": 4.75,
+      "stock": 120,
+      "rating": 4.7,
+      "description": "Plain, non-fat Greek yogurt with live and active cultures. High in protein.",
+      "image": "https://images.pexels.com/photos/4038851/pexels-photo-4038851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 10,
+      "name": "Avocados",
+      "category": "Fruits",
+      "price": 2.1,
+      "stock": 180,
+      "rating": 4.8,
+      "description": "Large, ripe Hass avocados, perfect for guacamole or toast.",
+      "image": "https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 11,
+      "name": "Organic Quinoa",
+      "category": "Pantry",
+      "price": 7.8,
+      "stock": 130,
+      "rating": 4.9,
+      "description": "1 lb bag of pre-rinsed, organic tri-color quinoa.",
+      "image": "https://images.pexels.com/photos/6782458/pexels-photo-6782458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 12,
+      "name": "Dark Chocolate Bar",
+      "category": "Snacks",
+      "price": 3.5,
+      "stock": 250,
+      "rating": 4.9,
+      "description": "A 3.5 oz bar of 72% cacao dark chocolate, rich in antioxidants.",
+      "image": "https://images.pexels.com/photos/4110101/pexels-photo-4110101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 13,
+      "name": "Cherry Tomatoes",
+      "category": "Vegetables",
+      "price": 3.0,
+      "stock": 100,
+      "rating": 4.6,
+      "description": "A pint of sweet and juicy organic cherry tomatoes.",
+      "image": "https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 14,
+      "name": "Rotisserie Chicken",
+      "category": "Prepared Foods",
+      "price": 8.99,
+      "stock": 30,
+      "rating": 4.8,
+      "description": "A whole, fully-cooked rotisserie chicken, seasoned and roasted in-store.",
+      "image": "https://images.pexels.com/photos/5718133/pexels-photo-5718133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 15,
+      "name": "Extra Virgin Olive Oil",
+      "category": "Pantry",
+      "price": 12.5,
+      "stock": 95,
+      "rating": 4.7,
+      "description": "A 500ml bottle of cold-pressed extra virgin olive oil from Italy.",
+      "image": "https://images.pexels.com/photos/33783/olive-oil-olives-bottle-greece.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 16,
+      "name": "Organic Bananas",
+      "category": "Fruits",
+      "price": 1.99,
+      "stock": 220,
+      "rating": 4.7,
+      "description": "A bunch of organic bananas, rich in potassium.",
+      "image": "https://images.pexels.com/photos/2280925/pexels-photo-2280925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 17,
+      "name": "Cheddar Cheese Block",
+      "category": "Dairy & Eggs",
+      "price": 6.25,
+      "stock": 140,
+      "rating": 4.6,
+      "description": "An 8 oz block of sharp cheddar cheese, aged for 9 months.",
+      "image": "https://images.pexels.com/photos/1435184/pexels-photo-1435184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 18,
+      "name": "Roasted Almonds",
+      "category": "Snacks",
+      "price": 8.5,
+      "stock": 160,
+      "rating": 4.8,
+      "description": "A bag of lightly salted, dry-roasted almonds.",
+      "image": "https://images.pexels.com/photos/33688/almond-almond-tree-crob-fruit.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 19,
+      "name": "Organic Carrots",
+      "category": "Vegetables",
+      "price": 2.2,
+      "stock": 180,
+      "rating": 4.5,
+      "description": "A 1 lb bag of whole organic carrots.",
+      "image": "https://images.pexels.com/photos/1306559/pexels-photo-1306559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 20,
+      "name": "Multigrain Crackers",
+      "category": "Snacks",
+      "price": 4.1,
+      "stock": 190,
+      "rating": 4.4,
+      "description": "A box of crispy multigrain crackers, perfect with cheese or dips.",
+      "image": "https://images.pexels.com/photos/984877/pexels-photo-984877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ]
+}

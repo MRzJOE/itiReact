@@ -1,7 +1,7 @@
 import React from "react";
 
-function products() {
-  return <div>products</div>;
+function Products() {
+  return <h1>products</h1>;
 }
 
-export default products;
+export default Products;
