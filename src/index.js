@@ -3,17 +3,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import ReactDOM from "react-dom/client";
 import "./styles/index.css";
-import "./styles/index.css";
 import "./styles/signup.css";
 import "./styles/details.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Error404 from "./pages/Error404";
-import Layout from "./pages/Layout";
+import Layout from "./pages/layout";
 
 import { menuData } from "./data";
-import Products from "./pages/Products";
+import Products from "./pages/products";
 // import ProductsCart from "./componants/productsCart";
 
 console.log("Menu Data:", menuData);
