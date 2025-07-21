@@ -1,26 +1,14 @@
 import React, { Fragment } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Header from "../componants/Header";
+import Footer from "../componants/Footer";
 
 function Layout() {
   return (
     <Fragment>
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/Porducts">Products</Link>
-            </li>
-            <li>
-              <Link to="./Cart">Cart</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <Outlet />
-      <footer>Footer</footer>
+      <Footer />
     </Fragment>
   );
 }
