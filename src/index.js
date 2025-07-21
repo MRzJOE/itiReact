@@ -9,6 +9,7 @@ import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import Error404 from "./pages/Error404";
 import Layout from "./pages/Layout";
+import { menuData } from "./data";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
