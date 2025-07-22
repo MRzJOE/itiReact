@@ -17,8 +17,8 @@ function ProductsCart(props) {
         <td className="align-middle">
           <div className="d-flex align-items-center">
             <img
-              className="me-2"
-              style={{ width: "50px", height: "50px" }}
+              className="me-2 object-fit-fill border rounded p-0"
+              style={{ width: "70px", height: "70px" }}
               src={props.image}
               alt={props.name}
             />
