@@ -1,11 +1,13 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import { Link } from "react-router-dom";
 import ProductsCart from "../componants/productsCart";
+import { CartContext } from "../Utilits/CartContext";
 
 function Cart() {
+  const { cartItems } = useContext(CartContext);
   return (
     <Fragment>
-      <section id="cartItems" className="container">
+      <section id="cartItems" className="container-sm">
         <div className="table-responsive">
           <table className="w-100">
             <thead>
@@ -24,9 +26,20 @@ function Cart() {
               </tr>
             </thead>
             <tbody>
-              <ProductsCart />
-              <ProductsCart />
-              <ProductsCart />
+              {cartItems.length === 0 ? (
+                <h2>No items found</h2>
+              ) : (
+                cartItems.map((item) => (
+                  <ProductsCart
+                    key={item.sku}
+                    sku={item.sku}
+                    name={item.name}
+                    price={item.price}
+                    Quantity={item.Quantity}
+                    image={item.image}
+                  />
+                ))
+              )}
             </tbody>
           </table>
         </div>

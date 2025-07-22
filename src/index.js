@@ -13,20 +13,23 @@ import Layout from "./pages/layout";
 
 import { menuData } from "./data";
 import Products from "./pages/products";
+import { CartProvider } from "./Utilits/CartContext";
 // import ProductsCart from "./componants/productsCart";
 
 console.log("Menu Data:", menuData);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="Products" element={<Products />} />
-        <Route path="Cart" element={<Cart />} />
-        <Route path="*" element={<Error404 />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
+  <CartProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="Products" element={<Products />} />
+          <Route path="Cart" element={<Cart />} />
+          <Route path="*" element={<Error404 />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </CartProvider>
 );

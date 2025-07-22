@@ -1,13 +1,14 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useContext } from "react";
+import { CartContext } from "../Utilits/CartContext";
 
 function ProductsCart(props) {
-  const [count, setCount] = useState(0);
+  const { updateQuantity, removeItem } = useContext(CartContext);
 
   const handleQuantity = (direction) => {
     if (direction === "Up") {
-      setCount((prev) => prev + 1);
-    } else if (direction === "Down" && count > 1) {
-      setCount((prev) => prev - 1);
+      updateQuantity(props.sku, 1);
+    } else if (direction === "Down" && props.Quantity > 1) {
+      updateQuantity(props.sku, -1);
     }
   };
   return (
@@ -18,15 +19,15 @@ function ProductsCart(props) {
             <img
               className="me-2"
               style={{ width: "50px", height: "50px" }}
-              src=""
-              alt=""
+              src={props.image}
+              alt={props.name}
             />
-            <span>Organic Lemon</span>
+            <span>{props.name}</span>
           </div>
         </td>
         <td className="text-center align-middle">
           <div id="itemPrice" className="d-flex align-items-center">
-            $56
+            ${props.price.toFixed(2)}
           </div>
         </td>
         <td className="align-middle">
@@ -42,7 +43,7 @@ function ProductsCart(props) {
               className="border-0 text-center"
               style={{ width: "40px", height: "20px" }}
               readOnly
-              value={count}
+              value={props.Quantity}
             />
             <button
               className="btn btn-sm py-0 px-1"
@@ -53,10 +54,15 @@ function ProductsCart(props) {
           </div>
         </td>
         <td id="itemTotalPrice" className="align-middle text-center">
-          $56
+          ${(props.price * props.Quantity).toFixed(2)}
         </td>
         <td id="itemAction" className="align-middle text-end">
-          <button className="btn btn-sm btn-danger">Delete</button>
+          <button
+            className="btn btn-sm btn-danger"
+            onClick={() => removeItem(props.sku)}
+          >
+            Delete
+          </button>
         </td>
       </tr>
     </Fragment>

@@ -12,7 +12,7 @@ export const menuData = {
       image: "https://i.imgur.com/8B8YLOo.jpg",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 1,
@@ -26,7 +26,7 @@ export const menuData = {
       image: "https://i.imgur.com/OHHctnf.jpg",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 2,
@@ -46,7 +46,7 @@ export const menuData = {
       image: "https://i.imgur.com/3ZTwCfz.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 3,
@@ -69,7 +69,7 @@ export const menuData = {
       image: "https://i.imgur.com/dyoOLCO.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 4,
@@ -90,7 +90,7 @@ export const menuData = {
       image: "https://i.imgur.com/wOEuXuV.jpg",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 5,
@@ -111,7 +111,7 @@ export const menuData = {
       image: "https://i.imgur.com/48Zw4K3.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 6,
@@ -131,7 +131,7 @@ export const menuData = {
       image: "https://i.imgur.com/MDrTvkI.jpg",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 7,
@@ -152,7 +152,7 @@ export const menuData = {
       image: "https://i.imgur.com/0vPtSSO.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 8,
@@ -173,7 +173,7 @@ export const menuData = {
       image: "https://i.imgur.com/lZtwJgy.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 9,
@@ -193,7 +193,7 @@ export const menuData = {
       image: "https://i.imgur.com/SoZu61g.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 10,
@@ -214,7 +214,7 @@ export const menuData = {
       image: "https://i.imgur.com/mqTgvgl.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 11,
@@ -228,7 +228,7 @@ export const menuData = {
       image: "https://i.imgur.com/k6IGrUd.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 12,
@@ -249,7 +249,7 @@ export const menuData = {
       image: "https://i.imgur.com/yOe5RtC.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 13,
@@ -270,7 +270,7 @@ export const menuData = {
       image: "https://i.imgur.com/ipMA5LP.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 14,
@@ -291,7 +291,7 @@ export const menuData = {
       image: "https://i.imgur.com/E67Xf8Y.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 15,
@@ -313,7 +313,7 @@ export const menuData = {
       image: "https://i.imgur.com/v4sa2cA.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 16,
@@ -334,7 +334,7 @@ export const menuData = {
       image: "https://i.imgur.com/w5IQ2rX.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 17,
@@ -357,7 +357,7 @@ export const menuData = {
       image: "https://i.imgur.com/znqS9KD.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 18,
@@ -380,7 +380,7 @@ export const menuData = {
       image: "https://i.imgur.com/cYpO8RT.png",
       category: "pizza",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
   ],
   pasta: [
@@ -396,7 +396,7 @@ export const menuData = {
       image: "https://i.imgur.com/IXDJ52k.png",
       category: "pasta",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 1,
@@ -415,7 +415,7 @@ export const menuData = {
       image: "https://i.imgur.com/3jKSuUu.png",
       category: "pasta",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
   ],
   salads: [
@@ -440,7 +440,7 @@ export const menuData = {
       image: "https://i.imgur.com/QWXH2NC.png",
       category: "salads",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 1,
@@ -465,7 +465,7 @@ export const menuData = {
       image: "https://i.imgur.com/qChqf83.png",
       category: "salads",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 2,
@@ -488,7 +488,7 @@ export const menuData = {
       image: "https://i.imgur.com/Ph0IjrX.png",
       category: "salads",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
   ],
   dessert: [
@@ -504,7 +504,7 @@ export const menuData = {
       image: "https://i.imgur.com/7WbfaDN.png",
       category: "dessert",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 1,
@@ -518,7 +518,7 @@ export const menuData = {
       image: "https://i.imgur.com/Mgsc3IZ.png",
       category: "dessert",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 2,
@@ -532,7 +532,7 @@ export const menuData = {
       image: "https://i.imgur.com/OWIVhWX.png",
       category: "dessert",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
     {
       id: 3,
@@ -546,7 +546,7 @@ export const menuData = {
       image: "https://i.imgur.com/AsldA7x.png",
       category: "dessert",
       inStock: true,
-      maxQuantity: 10,
+      Quantity: 0,
     },
   ],
   drinks: [
