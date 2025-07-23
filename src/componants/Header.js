@@ -56,13 +56,37 @@ function Header() {
         </button>
         <div className="collapse navbar-collapse justify-content-center" id="mobileNav">
           <ul className="navbar-nav">
-            <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/category">Category</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/products">Products</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/pages">Pages</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/blog">Blog</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/elements">Elements</Link></li>
-          </ul>
+                     <li className="nav-item">
+                       <Link className="nav-link" to="/">
+                         Home
+                       </Link>
+                     </li>
+                     <li className="nav-item">
+                       <Link className="nav-link" to="/category">
+                         Category
+                       </Link>
+                     </li>
+                     <li className="nav-item">
+                       <Link className="nav-link" to="/Products">
+                         Products
+                       </Link>
+                     </li>
+                     <li className="nav-item">
+                       <Link className="nav-link" to="/about-us">
+                         About Us
+                       </Link>
+                     </li>
+                     <li className="nav-item">
+                       <Link className="nav-link" to="/blog">
+                         Blog
+                       </Link>
+                     </li>
+                     <li className="nav-item">
+                       <Link className="nav-link" to="/elements">
+                         Elements
+                       </Link>
+                     </li>
+                   </ul>
         </div>
       </nav>
 
