@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { menuData } from "../data";
+import { CartContext } from "../Utilits/CartContext";
 
 function Products() {
   const menuDate = menuData;
+  const { addToCart } = useContext(CartContext);
+
   const handleAddToCart = (pizaa) => {
+    addToCart(pizaa);
     console.log(`${pizaa.name} added to cart!`);
   };
 

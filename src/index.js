@@ -14,7 +14,7 @@ import Blog from "./pages/blog";
 import { menuData } from "./data";
 import Products from "./pages/products";
 import { CartProvider } from "./Utilits/CartContext";
-//import ProductsCart from "./componants/productsCart";
+// import ProductsCart from "./componants/productsCart";
 
 console.log("Menu Data:", menuData);
 
