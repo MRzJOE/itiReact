@@ -1,0 +1,31 @@
+.card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 120px;
+  max-width: 180px;
+  box-sizing: border-box;
+}
+
+.value {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-size: 1em;
+  color: #777;
+}
+
+@media (max-width: 480px) {
+  .card {
+    min-width: unset;
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,97 @@
+.aboutUsContainer {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.breadcrumb span:first-child {
+  color: #555;
+  font-weight: bold;
+}
+
+.aboutSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+.aboutContent {
+  flex: 2;
+  min-width: 300px;
+}
+
+.sectionTitle {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.aboutContent p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.statistics {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.aboutImageContainer {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featuresSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .statistics {
+    justify-content: center;
+  }
+
+  .sectionTitle {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutUsContainer {
+    padding: 15px;
+  }
+  .sectionTitle {
+    font-size: 1.8em;
+  }
+}

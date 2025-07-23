@@ -11,10 +11,16 @@ import Cart from "./pages/Cart";
 import Error404 from "./pages/Error404";
 import Layout from "./pages/layout";
 
+import AboutUsPage from './pages/AboutUsPage';
+
 import { menuData } from "./data";
 import Products from "./pages/products";
 import { CartProvider } from "./Utilits/CartContext";
-// import ProductsCart from "./componants/productsCart";
+import ProductsCart from "./components/productsCart";
+import StatisticCard from './components/StatisticCard';
+import FeatureCard from './components/FeatureCard';
+
+
 
 console.log("Menu Data:", menuData);
 
@@ -28,6 +34,9 @@ root.render(
           <Route path="Products" element={<Products />} />
           <Route path="Cart" element={<Cart />} />
           <Route path="*" element={<Error404 />} />
+          <Route path="about-us" element={<AboutUsPage />} />
+
+
         </Route>
       </Routes>
     </BrowserRouter>
