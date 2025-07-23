@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Error404 from "./pages/Error404";
 import Layout from "./pages/layout";
-
+import Blog from "./pages/blog";
 import { menuData } from "./data";
 import Products from "./pages/products";
 import { CartProvider } from "./Utilits/CartContext";
@@ -29,6 +29,7 @@ root.render(
           <Route path="Cart" element={<Cart />} />
           <Route path="*" element={<Error404 />} />
           <Route path="about-us" element={<AboutUsPage />} />
+          <Route path="blog" element={<Blog />} />
         </Route>
       </Routes>
     </BrowserRouter>
