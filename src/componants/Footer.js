@@ -3,8 +3,8 @@ import "../styles/details.css";
 
 function Footer() {
   return (
-    <footer className="pt-5 bg-light text-dark">
-      <div className="container-lg">
+    <footer className="pt-5 bg-light text-dark container-fluid">
+      <div className="">
         <div className="row">
           <div className="col-12 col-md-3">
             <div className="d-flex align-items-start">

@@ -13,8 +13,9 @@ body {
 /* Header Styles */
 .top-header {
   background-color: #fff;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+ 
+ margin-bottom: 30px;
 }
 
 .header-container {
