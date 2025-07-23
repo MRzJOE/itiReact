@@ -11,9 +11,15 @@ import Cart from "./pages/Cart";
 import Error404 from "./pages/Error404";
 import Layout from "./pages/layout";
 
+import AboutUsPage from "./pages/AboutUsPage";
+
 import { menuData } from "./data";
 import Products from "./pages/products";
 import { CartProvider } from "./Utilits/CartContext";
+import ProductsCart from "./components/productsCart";
+import StatisticCard from "./components/StatisticCard";
+import FeatureCard from "./components/FeatureCard";
+import AboutUsPage from "./pages/AboutUsPage";
 
 console.log("Menu Data:", menuData);
 
