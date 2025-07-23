@@ -14,7 +14,7 @@ import Blog from "./pages/blog";
 import { menuData } from "./data";
 import Products from "./pages/products";
 import { CartProvider } from "./Utilits/CartContext";
-// import ProductsCart from "./componants/productsCart";
+import AboutUsPage from "./pages/AboutUsPage";
 
 console.log("Menu Data:", menuData);
 
@@ -29,6 +29,7 @@ root.render(
           <Route path="Cart" element={<Cart />} />
           <Route path="*" element={<Error404 />} />
 <Route path="blog" element={<Blog />} />
+          <Route path="about-us" element={<AboutUsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
