@@ -14,7 +14,6 @@ import Layout from "./pages/layout";
 import { menuData } from "./data";
 import Products from "./pages/products";
 import { CartProvider } from "./Utilits/CartContext";
-// import ProductsCart from "./componants/productsCart";
 
 console.log("Menu Data:", menuData);
 
