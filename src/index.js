@@ -24,7 +24,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Home name="" />} />
           <Route path="Products" element={<Products />} />
           <Route path="Cart" element={<Cart />} />
           <Route path="*" element={<Error404 />} />

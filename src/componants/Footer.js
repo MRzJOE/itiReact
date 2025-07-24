@@ -3,7 +3,7 @@ import "../styles/details.css";
 
 function Footer() {
   return (
-    <footer className="pt-5 bg-light text-dark container-fluid">
+    <footer className="pt-5 bg-light text-dark container-fluid text-center ">
       <div className="">
         <div className="row">
           <div className="col-12 col-md-3">
@@ -45,28 +45,8 @@ function Footer() {
           </div>
 
           <div className="col-12 col-md-4">
-            <h6 className="fw-bold">Subscribe Our Newsletter</h6>
-            <div className="input-group mb-3">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Search here..."
-              />
-              <button className="btn btn-outline-primary" type="button">
-                ✈️
-              </button>
-            </div>
-
-            <div className="image-gallery">
-              <img src="/assets/details1.jpg" alt="detail image 1" />
-              <img src="/assets/details2.jpg" alt="detail image 2" />
-              <img src="/assets/details3.jpg" alt="detail image 3" />
-              <img src="/assets/details4.jpg" alt="detail image 4" />
-              <img src="/assets/details5.jpg" alt="detail image 5" />
-            </div>
-
             <div className="text-center pt-4">
-              <small>© 2025 Foodzy, All rights reserved.</small>
+              <small>© 2025 ITI, All rights reserved.</small>
             </div>
           </div>
         </div>

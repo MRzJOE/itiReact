@@ -18,7 +18,7 @@ function ProductsCardHome() {
             <div className="card h-100">
               <img
                 src={pizzaa.image}
-                className="card-img-top"
+                className="card-img-top p-0"
                 alt={pizzaa.name}
               />
               <div className="card-body d-flex flex-column">

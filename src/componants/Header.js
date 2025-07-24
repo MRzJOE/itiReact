@@ -4,122 +4,130 @@ import "../styles/details.css";
 
 function Header() {
   useEffect(() => {
-    const searchBar = document.getElementById("searchBar");
-    const searchIcon = document.getElementById("searchIcon");
+    const mobileSearchBar = document.getElementById("mobileSearchBar");
     const showBtn = document.getElementById("searchShowBtn");
     const hideBtn = document.getElementById("searchHideBtn");
 
-    function toggleSearchBar() {
-      if (window.innerWidth < 768) {
-        searchBar.style.display = "none";
-        searchIcon.style.display = "block";
-        showBtn.style.display = "inline-block";
-        hideBtn.style.display = "none";
-      } else {
-        searchBar.style.display = "flex";
-        searchIcon.style.display = "none";
-      }
+    if (showBtn && hideBtn && mobileSearchBar) {
+      showBtn.addEventListener("click", () => {
+        mobileSearchBar.style.display = "block";
+      });
+
+      hideBtn.addEventListener("click", () => {
+        mobileSearchBar.style.display = "none";
+      });
     }
 
-    toggleSearchBar();
-    window.addEventListener("resize", toggleSearchBar);
-
-    showBtn.addEventListener("click", () => {
-      searchBar.style.display = "flex";
-      showBtn.style.display = "none";
-      hideBtn.style.display = "inline-block";
-    });
-
-    hideBtn.addEventListener("click", () => {
-      searchBar.style.display = "none";
-      showBtn.style.display = "inline-block";
-      hideBtn.style.display = "none";
-    });
-
+    // Cleanup event listeners
     return () => {
-      window.removeEventListener("resize", toggleSearchBar);
+      if (showBtn && hideBtn) {
+        showBtn.removeEventListener("click", () => {});
+        hideBtn.removeEventListener("click", () => {});
+      }
     };
   }, []);
 
   return (
-    <header className="top-header">
-      {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light text-black">
-      
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mobileNav"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse justify-content-center" id="mobileNav">
-          <ul className="navbar-nav">
-                     <li className="nav-item">
-                       <Link className="nav-link" to="/">
-                         Home
-                       </Link>
-                     </li>
-                     <li className="nav-item">
-                       <Link className="nav-link" to="/category">
-                         Category
-                       </Link>
-                     </li>
-                     <li className="nav-item">
-                       <Link className="nav-link" to="/Products">
-                         Products
-                       </Link>
-                     </li>
-                     <li className="nav-item">
-                       <Link className="nav-link" to="/about-us">
-                         About Us
-                       </Link>
-                     </li>
-                     <li className="nav-item">
-                       <Link className="nav-link" to="/blog">
-                         Blog
-                       </Link>
-                     </li>
-                     <li className="nav-item">
-                       <Link className="nav-link" to="/elements">
-                         Elements
-                       </Link>
-                     </li>
-                   </ul>
-        </div>
-      </nav>
+    <header className="top-header bg-white shadow-sm">
+      {/* Main Header Container */}
+      <div className="container-fluid px-3 px-md-4">
+        {/* Top Row - Logo, Search, Icons */}
+        {/* Navigation */}
+        <div className="row">
+          <div className="col-12">
+            <nav className="navbar navbar-expand-lg navbar-light p-0">
+              <button
+                className="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mobileNav"
+                aria-controls="mobileNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
 
-      {/* Logo & Search & Icons */}
-      <div className="container-sm">
-        <div className="header-container">
-          <div className="logo">
-            <img src="/assets/logo.png" alt="Logo" />
-            <div>
-              <h2 style={{ margin: 0 }}>Foodzy</h2>
-              <small>A Treasure of Tastes</small>
+              <div className="collapse navbar-collapse" id="mobileNav">
+                <ul className="navbar-nav mx-auto">
+                  <li className="nav-item">
+                    <Link className="nav-link px-3 py-2" to="/">
+                      Home
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link px-3 py-2" to="/category">
+                      Category
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link px-3 py-2" to="/Products">
+                      Products
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link px-3 py-2" to="/about-us">
+                      About Us
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link px-3 py-2" to="/blog">
+                      Blog
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link px-3 py-2" to="/elements">
+                      Elements
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div className="row align-items-center justify-content-between py-3">
+          {/* Logo */}
+          <div className="col-12 col-md-3 col-lg-2 mb-3 mb-md-0">
+            <div className="d-flex align-items-center">
+              <img
+                src="/assets/logo.png"
+                alt="Logo"
+                className="me-2"
+                style={{ height: "40px" }}
+              />
+              <div>
+                <h4 className="mb-0 fw-bold text-dark">Foodzy</h4>
+                <small className="text-muted">A Treasure of Tastes</small>
+              </div>
             </div>
           </div>
 
-          <div className="search-bar" id="searchBar">
-            <input type="text" placeholder="Search For items..." />
-            <select><option>All Categories</option></select>
-            <button>🔍</button>
-          </div>
+          {/* Header Icons */}
+          <div className="col-12 col-md-3 col-lg-3">
+            <div className="d-flex align-items-center justify-content-end gap-3">
+              {/* Account */}
+              <div className="d-flex align-items-center text-dark text-decoration-none">
+                <span className="me-1">👤</span>
+                <span className="d-none d-lg-inline">Account</span>
+              </div>
 
-          <div className="header-icons">
-            <div>👤 Account</div>
-            <Link to="/cart">🛒 Cart</Link>
-          </div>
-
-          <div id="searchIcon">
-            <button id="searchShowBtn" className="mobile-search-btn">🔍</button>
-            <button id="searchHideBtn" className="mobile-search-btn" style={{ display: "none" }}>✖️</button>
+              {/* Cart */}
+              <Link
+                to="/cart"
+                className="d-flex align-items-center text-dark text-decoration-none"
+              >
+                <span className="me-1">🛒</span>
+                <span className="d-none d-lg-inline">Cart</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="page-title mb-5">Blog Details</div>
+      {/* Page Title */}
+      <div className="bg-danger text-white text-center py-3">
+        <h5 className="mb-0">Blog Details</h5>
+      </div>
     </header>
   );
 }

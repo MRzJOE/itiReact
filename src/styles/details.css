@@ -1,63 +1,47 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+/* Header Styles */
+.top-header {
+  border-bottom: 1px solid #e9ecef;
 }
 
-.logo img {
-  height: 40px;
+/* Remove custom search bar styles to use Bootstrap */
+.search-bar .input-group {
+  max-width: 100%;
 }
 
-.search-bar {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-  padding: 10px;
-  gap: 0;
+/* Header Icons Responsive */
+.header-icons a,
+.header-icons div {
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.search-bar input,
-.search-bar select {
-  padding: 8px;
-  border: 1px solid #ccc;
+/* Navigation */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #495057 !important;
+  transition: color 0.3s ease;
 }
 
-.search-bar input {
-  border-radius: 4px 0 0 4px;
-  width: 300px;
+.navbar-nav .nav-link:hover {
+  color: #dc3545 !important;
 }
 
-.search-bar select {
-  border-left: none;
+/* Mobile Search Adjustments */
+@media (max-width: 767.98px) {
+  .header-icons span {
+    font-size: 12px;
+  }
+
+  .search-bar .input-group {
+    flex-wrap: nowrap;
+  }
 }
 
-.search-bar button {
-  padding: 8px 12px;
-  background-color: #f44336;
-  color: white;
-  border: none;
-  border-radius: 0 4px 4px 0;
-}
-
-.header-icons {
-  position: relative;
-  left: 50px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.page-title {
-  background-color: #f44336;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-}
-
+/* Content Styles */
 .container {
   display: flex;
   max-width: 1200px;
@@ -120,7 +104,7 @@ h2 {
 }
 
 .pagination button {
-  background: #f44336;
+  background: #dc3545;
   color: white;
   padding: 5px 10px;
   border-radius: 3px;
@@ -136,24 +120,9 @@ h2 {
   object-fit: cover;
   border-radius: 30%;
   transition: transform 0.3s;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .image-gallery img:hover {
   transform: scale(1.1);
 }
-
-#searchIcon {
-  position: absolute;
-  top: 70px;
-  right: 0;
-}
-
-.mobile-search-btn {
-  background-color: #f44336;
-  color: white;
-  padding: 8px 12px;
-  border: none 
-  
-}
-
