@@ -12,7 +12,7 @@ function Cart() {
           <table className="w-100">
             <thead>
               <tr className="p-3">
-                <th style={{ width: "40%" }}>Product</th>
+                <th style={{ width: "40%" }}>Products</th>
                 <th style={{ width: "20%" }}>Price</th>
                 <th style={{ width: "10%" }} className="text-center">
                   Quantity
