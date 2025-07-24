@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // ← أضفنا ده
 import "../styles/details.css";
 
 const BlogDetails = () => {
@@ -40,9 +41,9 @@ const BlogDetails = () => {
         </div>
 
         <div className="pagination">
-          <button>1</button>
-          <button>2</button>
-          <button>Next</button>
+          <Link to="/us">
+            <button>Next</button>
+          </Link>
         </div>
       </div>
     </div>

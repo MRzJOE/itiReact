@@ -1,14 +1,17 @@
 import React, { Fragment } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "../componants/Header";
 import Footer from "../componants/Footer";
 
 function Layout() {
+  const location = useLocation();
+  const isUsPage = location.pathname === "/us"; 
+
   return (
     <Fragment>
-      <Header />
+      {!isUsPage && <Header />}
       <Outlet />
-      <Footer />
+      {!isUsPage && <Footer />}
     </Fragment>
   );
 }
