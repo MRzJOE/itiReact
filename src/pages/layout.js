@@ -1,17 +1,36 @@
 import React, { Fragment } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import Header from "../componants/Header";
-import Footer from "../componants/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Layout() {
   const location = useLocation();
-  const isUsPage = location.pathname === "/us"; 
+
+  // هيدر مش ظاهر في صفحة /us
+  const hideHeader = location.pathname === "/us";
+
+  // دالة بسيطة لتحديد النص اللي هيظهر في الشريط البرتقالي حسب الصفحة
+  const getPageTitle = () => {
+    switch (location.pathname) {
+      case "/":
+        return "Home";
+      case "/Products":
+        return "Products";
+      case "/about-us":
+        return "About Us";
+      case "/blog":
+        return "Blog Details";
+ 
+      default:
+        return "";
+    }
+  };
 
   return (
     <Fragment>
-      {!isUsPage && <Header />}
+      {!hideHeader && <Header pageTitle={getPageTitle()} />}
       <Outlet />
-      {!isUsPage && <Footer />}
+      <Footer />
     </Fragment>
   );
 }
