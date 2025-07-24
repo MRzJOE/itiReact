@@ -1,12 +1,18 @@
 import React from "react";
-import ProductsCardHome from "../componants/ProductCardHome";
+import HeroSection from "../components/HeroSection";
+import PopularCategoriesSection from "../components/PopularCategoriesSection";
+import ProductsCart from "../componants/productsCart";
 
-function Home() {
+const Home = () => {
   return (
     <main className="container-sm">
-      <ProductsCardHome />
+      <HeroSection />
+
+      <ProductsCart />
+
+      <PopularCategoriesSection />
     </main>
   );
-}
+};
 
 export default Home;
