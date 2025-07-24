@@ -28,93 +28,90 @@ function Header() {
   }, []);
 
   return (
-    <header className="top-header bg-white shadow-sm">
-      <div className="container-fluid px-3 px-md-4">
-        <div className="row">
-          <div className="col-12">
-            <nav className="navbar navbar-expand-lg navbar-light p-0">
-              <button
-                className="navbar-toggler border-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mobileNav"
-                aria-controls="mobileNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-
-              <div className="collapse navbar-collapse" id="mobileNav">
-                <ul className="navbar-nav mx-auto">
-                  <li className="nav-item">
-                    <Link className="nav-link px-3 py-2" to="/">
-                      Home
-                    </Link>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link className="nav-link px-3 py-2" to="/Products">
-                      Products
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link px-3 py-2" to="/about-us">
-                      About Us
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link px-3 py-2" to="/blog">
-                      Blog
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-        <div className="row align-items-center justify-content-between py-3">
-          {/* Logo */}
-          <div className="col-12 col-md-3 col-lg-2 mb-3 mb-md-0">
-            <div className="d-flex align-items-center">
-              <img
-                src="/assets/logo.png"
-                alt="Logo"
-                className="me-2"
-                style={{ height: "40px" }}
-              />
-              <div>
-                <h4 className="mb-0 fw-bold text-dark">Foodzy</h4>
-                <small className="text-muted">A Treasure of Tastes</small>
-              </div>
-            </div>
-          </div>
-
-          {/* Header Icons */}
-          <div className="col-12 col-md-3 col-lg-3">
-            <div className="d-flex align-items-center justify-content-end gap-3">
-              {/* Account */}
-              <div className="d-flex align-items-center text-dark text-decoration-none">
-                <span className="me-1">👤</span>
-                <span className="d-none d-lg-inline">Account</span>
-              </div>
-
-              {/* Cart */}
-              <Link
-                to="/cart"
-                className="d-flex align-items-center text-dark text-decoration-none"
-              >
-                <span className="me-1">🛒</span>
-                <span className="d-none d-lg-inline">Cart</span>
-              </Link>
-            </div>
-          </div>
-        </div>
+    <header className="top-header parent-container">
+      {/* Search Icon فوق يمين */}
+      <div id="searchIcon">
+        <button id="searchShowBtn" className="mobile-search-btn">
+          🔍
+        </button>
+        <button
+          id="searchHideBtn"
+          className="mobile-search-btn"
+          style={{ display: "none" }}
+        >
+          ✖️
+        </button>
       </div>
 
-      {/* Page Title */}
-      <div className="bg-danger text-white text-center py-3">
-        <h5 className="mb-0">Blog Details</h5>
+      {/* Navbar */}
+      <nav className="navbar navbar-expand-lg navbar-light d-flex justify-content-between align-items-center">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileNav"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div
+          className="collapse navbar-collapse justify-content-center"
+          id="mobileNav"
+        >
+          <ul className="navbar-nav mx-auto">
+            <li className="nav-item">
+              <Link className="nav-link px-3 py-2" to="/">
+                Home
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link px-3 py-2" to="/Products">
+                Products
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link px-3 py-2" to="/about-us">
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link px-3 py-2" to="/blog">
+                Blog
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link px-3 py-2" to="/us">
+                US
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      {/* Logo & Search & Icons */}
+      <div className="container-sm">
+        <div className="header-container">
+          <div className="logo">
+            <img src="/assets/logo.png" alt="Logo" />
+            <div>
+              <h2 style={{ margin: 0 }}>Foodzy</h2>
+              <small>A Treasure of Tastes</small>
+            </div>
+          </div>
+
+          <div className="search-bar" id="searchBar">
+            <input type="text" placeholder="Search For items..." />
+            <select>
+              <option>All Categories</option>
+            </select>
+            <button>🔍</button>
+          </div>
+
+          <div className="header-icons">
+            <div>👤 Account</div>
+            <Link to="/cart">🛒 Cart</Link>
+          </div>
+        </div>
       </div>
     </header>
   );
