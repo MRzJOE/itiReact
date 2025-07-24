@@ -29,9 +29,9 @@ function Cart() {
               {cartItems.length === 0 ? (
                 <h2>No items found</h2>
               ) : (
-                cartItems.map((item) => (
+                cartItems.map((item, inddex) => (
                   <ProductsCart
-                    key={item.sku}
+                    key={inddex}
                     sku={item.sku}
                     name={item.name}
                     price={item.price}
@@ -45,7 +45,7 @@ function Cart() {
         </div>
 
         <div className="d-flex justify-content-between mt-4 container-sm align-middle">
-          <Link to="#" className="link-secondary">
+          <Link to="/products" className="link-secondary">
             → Continue Shopping
           </Link>
           <button className="border rounded-1 text-white btn-primary p-2 btn-sm">
