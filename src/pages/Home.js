@@ -1,7 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
+import ProductsCardHome from "../componants/ProductCardHome";
 
 function Home() {
-  return <h1 className="text-center text-primary">Home</h1>;
+  return (
+    <main className="container-sm">
+      <ProductsCardHome />
+    </main>
+  );
 }
 
 export default Home;
