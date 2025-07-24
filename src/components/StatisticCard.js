@@ -4,8 +4,8 @@ import styles from './StatisticCard.module.css';
 const StatisticCard = ({ value, label }) => {
   return (
     <div className={styles.card}>
-      <div className={styles.value}>{value}</div>
-      <div className={styles.label}>{label}</div>
+      <p className={styles.value}>{value}</p>
+      <p className={styles.label}>{label}</p>
     </div>
   );
 };
