@@ -1,7 +1,14 @@
-import React from "react";
+import React from 'react';
+import HeroSection from '../components/HeroSection';
+import PopularCategoriesSection from '../components/PopularCategoriesSection';
 
-function Home() {
-  return <h1 className="text-center text-primary">Home</h1>;
-}
+const Home = () => {
+  return (
+    <div>
+      <HeroSection />
+      <PopularCategoriesSection />
+    </div>
+  );
+};
 
 export default Home;
