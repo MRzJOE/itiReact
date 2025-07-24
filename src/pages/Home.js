@@ -1,15 +1,17 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
 import PopularCategoriesSection from "../components/PopularCategoriesSection";
-import ProductCardHome from "../componants/ProductCardHome";
+import ProductCardHome from "../components/ProductCardHome";
 
 const Home = () => {
   return (
-    <main className="container-sm">
+    <main className="container-fluid">
       <HeroSection />
-      <PopularCategoriesSection />
+      <div className="container-sm">
+        <PopularCategoriesSection />
 
-      <ProductCardHome />
+        <ProductCardHome />
+      </div>
     </main>
   );
 };

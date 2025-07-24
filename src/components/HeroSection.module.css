@@ -1,5 +1,5 @@
 .heroSection {
-  height: 500px;
+  height: 800px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -30,7 +30,7 @@
 .subTitle {
   font-size: 1.5em;
   margin-bottom: 10px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: #ffd700;
 }
 

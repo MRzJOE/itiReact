@@ -1,6 +1,6 @@
 import React, { useContext, Fragment } from "react";
 import { menuData } from "../data";
-import { CartContext } from "../Utilits/CartContext";
+import { CartContext } from "../utils/CartContext";
 
 function ProductsCardHome() {
   const menuDate = menuData;
@@ -12,6 +12,9 @@ function ProductsCardHome() {
   };
   return (
     <Fragment>
+      <div className="mb-3">
+        <p className="display-5">Our Products</p>
+      </div>
       <div className="row mb-3">
         {menuDate.pizza.slice(2, 6).map((pizzaa) => (
           <div key={pizzaa.sku} className="col-md-3 mb-3">

@@ -29,10 +29,7 @@ function Header() {
 
   return (
     <header className="top-header bg-white shadow-sm">
-      {/* Main Header Container */}
       <div className="container-fluid px-3 px-md-4">
-        {/* Top Row - Logo, Search, Icons */}
-        {/* Navigation */}
         <div className="row">
           <div className="col-12">
             <nav className="navbar navbar-expand-lg navbar-light p-0">
@@ -55,11 +52,7 @@ function Header() {
                       Home
                     </Link>
                   </li>
-                  <li className="nav-item">
-                    <Link className="nav-link px-3 py-2" to="/category">
-                      Category
-                    </Link>
-                  </li>
+
                   <li className="nav-item">
                     <Link className="nav-link px-3 py-2" to="/Products">
                       Products
@@ -73,11 +66,6 @@ function Header() {
                   <li className="nav-item">
                     <Link className="nav-link px-3 py-2" to="/blog">
                       Blog
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link px-3 py-2" to="/elements">
-                      Elements
                     </Link>
                   </li>
                 </ul>

@@ -13,7 +13,7 @@ import Layout from "./pages/layout";
 import Blog from "./pages/blog";
 import { menuData } from "./data";
 import Products from "./pages/products";
-import { CartProvider } from "./Utilits/CartContext";
+import { CartProvider } from "./utils/CartContext";
 import AboutUsPage from "./pages/AboutUsPage";
 
 console.log("Menu Data:", menuData);

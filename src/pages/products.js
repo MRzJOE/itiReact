@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { menuData } from "../data";
-import { CartContext } from "../Utilits/CartContext";
+import { CartContext } from "../utils/CartContext";
 
 function Products() {
   const menuDate = menuData;
