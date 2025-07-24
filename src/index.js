@@ -28,8 +28,8 @@ root.render(
           <Route path="Products" element={<Products />} />
           <Route path="Cart" element={<Cart />} />
           <Route path="*" element={<Error404 />} />
-          <Route path="about-us" element={<AboutUsPage />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="about-us" element={<AboutUsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
