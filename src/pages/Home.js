@@ -1,16 +1,15 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
 import PopularCategoriesSection from "../components/PopularCategoriesSection";
-import ProductsCart from "../componants/productsCart";
+import ProductCardHome from "../componants/ProductCardHome";
 
 const Home = () => {
   return (
     <main className="container-sm">
       <HeroSection />
-
-      <ProductsCart />
-
       <PopularCategoriesSection />
+
+      <ProductCardHome />
     </main>
   );
 };

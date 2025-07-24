@@ -12,7 +12,7 @@ function ProductsCardHome() {
   };
   return (
     <Fragment>
-      <div className="row">
+      <div className="row mb-3">
         {menuDate.pizza.slice(2, 6).map((pizzaa) => (
           <div key={pizzaa.sku} className="col-md-3 mb-3">
             <div className="card h-100">
