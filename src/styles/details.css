@@ -142,6 +142,7 @@ h2 {
 .image-gallery img:hover {
   transform: scale(1.1);
 }
+<<<<<<< HEAD
 
 #searchIcon {
   position: absolute;
@@ -155,6 +156,8 @@ h2 {
 
 /* الزرار بتاع البحث */
 
+=======
+>>>>>>> ae8a990318bcb29ba178bd6203ef366ba2a8f5f0
 .parent-container {
   position: relative;
 }
