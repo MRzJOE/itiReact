@@ -9,7 +9,6 @@ const Home = () => {
       <HeroSection />
       <div className="container-sm">
         <PopularCategoriesSection />
-
         <ProductCardHome />
       </div>
     </main>
