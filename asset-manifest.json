@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/itiReact/static/css/main.50dc081f.css",
-    "main.js": "/itiReact/static/js/main.0895e5f0.js",
+    "main.js": "/itiReact/static/js/main.c8d43068.js",
     "static/media/breakfast.png": "/itiReact/static/media/breakfast.7cef361f6fc46e1bf525.png",
     "static/media/browseall.png": "/itiReact/static/media/browseall.7c8884ffbeb0d932dc2a.png",
     "static/media/dessert.png": "/itiReact/static/media/dessert.cde71124e07c3b565450.png",
@@ -22,10 +22,10 @@
     "static/media/feature2.svg": "/itiReact/static/media/feature2.a12f6f217038b08987af16f03b34cc0b.svg",
     "index.html": "/itiReact/index.html",
     "main.50dc081f.css.map": "/itiReact/static/css/main.50dc081f.css.map",
-    "main.0895e5f0.js.map": "/itiReact/static/js/main.0895e5f0.js.map"
+    "main.c8d43068.js.map": "/itiReact/static/js/main.c8d43068.js.map"
   },
   "entrypoints": [
     "static/css/main.50dc081f.css",
-    "static/js/main.0895e5f0.js"
+    "static/js/main.c8d43068.js"
   ]
 }
