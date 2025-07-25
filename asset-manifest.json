@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/itiReact/static/css/main.50dc081f.css",
-    "main.js": "/itiReact/static/js/main.98f086ec.js",
+    "main.css": "/itiReact/static/css/main.43343a91.css",
+    "main.js": "/itiReact/static/js/main.30b1eeb5.js",
     "static/media/breakfast.png": "/itiReact/static/media/breakfast.7cef361f6fc46e1bf525.png",
     "static/media/browseall.png": "/itiReact/static/media/browseall.7c8884ffbeb0d932dc2a.png",
     "static/media/dessert.png": "/itiReact/static/media/dessert.cde71124e07c3b565450.png",
@@ -30,11 +30,11 @@
     "static/media/feature5.svg": "/itiReact/static/media/feature5.e71ee8f49c8579b64f197240d335dec2.svg",
     "static/media/feature2.svg": "/itiReact/static/media/feature2.a12f6f217038b08987af16f03b34cc0b.svg",
     "index.html": "/itiReact/index.html",
-    "main.50dc081f.css.map": "/itiReact/static/css/main.50dc081f.css.map",
-    "main.98f086ec.js.map": "/itiReact/static/js/main.98f086ec.js.map"
+    "main.43343a91.css.map": "/itiReact/static/css/main.43343a91.css.map",
+    "main.30b1eeb5.js.map": "/itiReact/static/js/main.30b1eeb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.50dc081f.css",
-    "static/js/main.98f086ec.js"
+    "static/css/main.43343a91.css",
+    "static/js/main.30b1eeb5.js"
   ]
 }
