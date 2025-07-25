@@ -1,17 +1,13 @@
-import React from 'react';
-import styles from './AboutUsPage.module.css';
-import StatisticCard from '../components/StatisticCard';
-import FeatureCard from '../components/FeatureCard';
+import React from "react";
+import styles from "./AboutUsPage.module.css";
+import StatisticCard from "../components/StatisticCard";
+import FeatureCard from "../components/FeatureCard";
 
-import aboutImage from '../assets/images/tomatoimg.jpg';
+import aboutImage from "../assets/0.png";
 
 const AboutUsPage = () => {
   return (
     <div className={styles.aboutUsContainer}>
-      <nav className={styles.breadcrumb}>
-        <span>Home</span> - <span>About Us</span>
-      </nav>
-
       <section className={styles.aboutSection}>
         <div className={styles.aboutContent}>
           <h1 className={styles.sectionTitle}>About The Carrot</h1>
@@ -27,11 +23,11 @@ const AboutUsPage = () => {
             similique incidunt voluptatum eius perferendis amet!
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
-            maxime amet architecto eo exercitationem optio ea maiores corporis
-            beatae, doloris doloribus itaque sunt officia dolores deserunt
-            adipisci voluptatum magni sunt aed blanditiis quid aspernatur
-            iusto?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium, maxime amet architecto eo exercitationem optio ea
+            maiores corporis beatae, doloris doloribus itaque sunt officia
+            dolores deserunt adipisci voluptatum magni sunt aed blanditiis quid
+            aspernatur iusto?
           </p>
 
           <div className={styles.statistics}>
@@ -40,8 +36,12 @@ const AboutUsPage = () => {
             <StatisticCard value="2K" label="Products" />
           </div>
         </div>
-        <div className={styles.aboutImageContainer}>
-          <img src={aboutImage} alt="Assortment of fresh vegetables" className={styles.aboutImage} />
+        <div className={styles.aboutImageContainer && "p-2"}>
+          <img
+            src={aboutImage}
+            alt="Assortment of fresh vegetables"
+            className={styles.aboutImage && "p-0"}
+          />
         </div>
       </section>
 
