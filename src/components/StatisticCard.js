@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './StatisticCard.module.css';
+import React from "react";
+import styles from "./StatisticCard.module.css";
 
 const StatisticCard = ({ value, label }) => {
   return (
