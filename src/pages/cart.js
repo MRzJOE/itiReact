@@ -29,9 +29,9 @@ function Cart() {
               {cartItems.length === 0 ? (
                 <h2>No items found</h2>
               ) : (
-                cartItems.map((item, inddex) => (
+                cartItems.map((item) => (
                   <ProductsCart
-                    key={inddex}
+                    key={item.id}
                     sku={item.sku}
                     name={item.name}
                     price={item.price}
@@ -41,6 +41,24 @@ function Cart() {
                 ))
               )}
             </tbody>
+            <tfoot>
+              {cartItems.length > 0 && (
+                <tr className="border-top">
+                  <td colSpan="4" className="text-end fw-bold p-3 fs-3">
+                    Sub Total:
+                  </td>
+                  <td className="text-end fw-bold p-3 fs-4">
+                    $
+                    {cartItems
+                      .reduce(
+                        (total, item) => total + item.price * item.Quantity,
+                        0
+                      )
+                      .toFixed(2)}
+                  </td>
+                </tr>
+              )}
+            </tfoot>
           </table>
         </div>
 
