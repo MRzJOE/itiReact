@@ -5,12 +5,9 @@ import salad from "../assets/salad.jpg";
 import juice from "../assets/juice.jpg";
 import pasta from "../assets/pasta.jpg";
 
-
 const BlogDetails = () => {
   return (
-    
     <div className="container-sm">
-      
       <div className="main-content">
         <img src={salad} className="blog-image" alt="Salad" />
         <div className="meta">By Admin | 07 Comments | Date: 09.07.2024</div>
@@ -38,23 +35,21 @@ const BlogDetails = () => {
           <h3>Comment</h3>
           <p>
             <strong>John Martin:</strong> Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Asperiores officiis magni explicabo fuga molestiae!
+            adipisicing elit. Asperiores officiis magni explicabo fuga
+            molestiae!
           </p>
-          
         </div>
 
         <div className="tags">
           <strong>Tags:</strong> Catalog, Appetizer, Meat Food
         </div>
-        
       </div>
-       <div className="pagination">
-      <Link to="/us">
-        <button>NEXT</button>
-      </Link>
+      <div className="pagination">
+        <Link to="/us">
+          <button>NEXT</button>
+        </Link>
+      </div>
     </div>
-    </div>
-    
   );
 };
 

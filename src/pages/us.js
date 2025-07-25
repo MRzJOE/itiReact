@@ -7,8 +7,11 @@ import work from "../assets/images/work.jpg";
 
 const TeamPage = () => {
   return (
-    <section className="team-section">
-      <div className="paginationn" style={{ textAlign: "left", margin: "10px" }}>
+    <section className="team-section ">
+      <div
+        className="paginationn"
+        style={{ textAlign: "left", margin: "10px" }}
+      >
         <Link to="/blog">
           <button>BACK</button>
         </Link>
@@ -18,21 +21,24 @@ const TeamPage = () => {
         <img src={logo} className="diamond-image" alt="Logo" />
         <br />
         <div className="orange-bar">
-          <h2 style={{ backgroundColor: "#f44336", color: "white" }}>TEAM MEMBERS</h2>
+          <h2 style={{ backgroundColor: "#f44336", color: "white" }}>
+            TEAM MEMBERS
+          </h2>
         </div>
       </div>
 
-      <div className="top-member">
+      <div className="top-member ">
         <div className="member">
           <div className="image-placeholder">
             <img src={constructor} alt="Constructor" />
-          </div>    
+          </div>
           <h3>mahmoud abdulhamid</h3>
           <p className="position">our constructor</p>
-          <div className="member-details">          
+          <div className="member-details">
             <p>
-              Mahmoud Abdulhamid is the foundation of our team's vision. With sharp technical insight
-              and outstanding leadership, he brought our ideas to life and made sure every part was built to last.
+              Mahmoud Abdulhamid is the foundation of our team's vision. With
+              sharp technical insight and outstanding leadership, he brought our
+              ideas to life and made sure every part was built to last.
             </p>
           </div>
         </div>
@@ -52,18 +58,17 @@ const TeamPage = () => {
             <p>Made this page and the blogs also the footer and header</p>
           </div>
         </div>
-
         <div className="member">
           <div className="image-placeholder">
             <img src={work} alt="Jhon" />
           </div>
-          <h3>JHON EZZAT</h3>
+          <h3>JOHN EZZAT</h3>
           <p className="position">Team Member</p>
           <div className="member-details">
             <p>The best when it comes to javascript made the cart page</p>
           </div>
-        </div>-
-
+        </div>
+        -
         <div className="member">
           <div className="image-placeholder">
             <img src={work} alt="Yasser" />
@@ -71,10 +76,9 @@ const TeamPage = () => {
           <h3>MOHAMED YASSER</h3>
           <p className="position">Team Member</p>
           <div className="member-details">
-            <p>Made the about us page and the checkout page</p>
+            <p>Made the about us page</p>
           </div>
         </div>
-
         <div className="member">
           <div className="image-placeholder">
             <img src={work} alt="Abdullah" />

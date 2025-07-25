@@ -9,11 +9,7 @@ const WhyChooseUsSection = () => {
   return (
     <div className="why-container">
       <div className="why-imgdiv">
-        <img
-          src={img0}
-          alt="Why Choose Us"
-          className="why-img"
-        />
+        <img src={img0} alt="Why Choose Us" className="why-img" />
       </div>
 
       <div className="why-content">
