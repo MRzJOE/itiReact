@@ -485,9 +485,9 @@ h2 {
 }
 .container{
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: auto;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 30px;
   margin-bottom: 30px;
@@ -519,10 +519,10 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-  .container {
+  /* .container {
     flex-direction: column;
     padding: 15px;
-  }
+  } */
 
   .subcontent {
     flex-direction: column;

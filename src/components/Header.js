@@ -108,7 +108,7 @@ function Header() {
           </div>
 
           <div className="header-icons">
-            <div>👤 Account</div>
+            <Link to='/Signup'>Account</Link>
             <Link to="/cart">🛒 Cart</Link>
           </div>
         </div>

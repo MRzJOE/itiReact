@@ -37,7 +37,7 @@ function Signup() {
 
   React.useEffect(() => {
     if (isLoggedIn) {
-      navigate('/home');
+      navigate('/');
     }
   }, [isLoggedIn, navigate]);
 
