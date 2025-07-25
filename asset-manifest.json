@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/itiReact/static/css/main.43343a91.css",
-    "main.js": "/itiReact/static/js/main.30b1eeb5.js",
+    "main.css": "/itiReact/static/css/main.7346b632.css",
+    "main.js": "/itiReact/static/js/main.ea1e88f4.js",
     "static/media/breakfast.png": "/itiReact/static/media/breakfast.7cef361f6fc46e1bf525.png",
     "static/media/browseall.png": "/itiReact/static/media/browseall.7c8884ffbeb0d932dc2a.png",
     "static/media/dessert.png": "/itiReact/static/media/dessert.cde71124e07c3b565450.png",
     "static/media/constructor.png": "/itiReact/static/media/constructor.9f966990748c6b00e6ae.png",
-    "static/media/left.svg": "/itiReact/static/media/left.330cf770840eec1613bd78fa5c0a8b45.svg",
     "static/media/0.png": "/itiReact/static/media/0.c2869b902c6686cdf29a.png",
     "static/media/footer.svg": "/itiReact/static/media/footer.b02cbde3611d91be1738386c5aff5b0d.svg",
     "static/media/breakfastfood.png": "/itiReact/static/media/breakfastfood.4b9b42a5f2514e59fd68.png",
@@ -18,23 +17,20 @@
     "static/media/work.jpg": "/itiReact/static/media/work.b7391cf45b2773eecfaf.jpg",
     "static/media/juice.jpg": "/itiReact/static/media/juice.da20ee4edd4034640e1f.jpg",
     "static/media/logo.png": "/itiReact/static/media/logo.c0865603aebee6c94ed1.png",
-    "static/media/Frame2.svg": "/itiReact/static/media/Frame2.82b56cf51b5ace771e421a7ce8f65796.svg",
     "static/media/3.png": "/itiReact/static/media/3.590f616a131763876bee.png",
-    "static/media/Frame1.svg": "/itiReact/static/media/Frame1.a52a4079baa778f8c1a6d4cb1fff3b56.svg",
     "static/media/2.png": "/itiReact/static/media/2.1e41b5dd8b2f6c5c34c9.png",
     "static/media/feature3.svg": "/itiReact/static/media/feature3.7613743701bcbb7020fcd4e3f718164f.svg",
     "static/media/1.png": "/itiReact/static/media/1.feb17cc95ee06cf29fae.png",
-    "static/media/Frame3.svg": "/itiReact/static/media/Frame3.9d2a2624740e282d95eb94f91738299b.svg",
     "static/media/feature4.svg": "/itiReact/static/media/feature4.408e4b0e56fd6443ce3e25e5a3802a25.svg",
     "static/media/feature1.svg": "/itiReact/static/media/feature1.764e34d2778071765e4fc5954493d526.svg",
     "static/media/feature5.svg": "/itiReact/static/media/feature5.e71ee8f49c8579b64f197240d335dec2.svg",
     "static/media/feature2.svg": "/itiReact/static/media/feature2.a12f6f217038b08987af16f03b34cc0b.svg",
     "index.html": "/itiReact/index.html",
-    "main.43343a91.css.map": "/itiReact/static/css/main.43343a91.css.map",
-    "main.30b1eeb5.js.map": "/itiReact/static/js/main.30b1eeb5.js.map"
+    "main.7346b632.css.map": "/itiReact/static/css/main.7346b632.css.map",
+    "main.ea1e88f4.js.map": "/itiReact/static/js/main.ea1e88f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.43343a91.css",
-    "static/js/main.30b1eeb5.js"
+    "static/css/main.7346b632.css",
+    "static/js/main.ea1e88f4.js"
   ]
 }
