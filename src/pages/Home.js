@@ -4,9 +4,10 @@ import PopularCategoriesSection from "../components/PopularCategoriesSection";
 import ProductCardHome from "../components/ProductCardHome";
 import WhyChooseUs from "../components/whychooseus"; // استيراد المكون
 
+import Fcomp from "../components/Fcomp";
+import Scomp from "../components/Scomp";
 const Home = () => {
   return (
-    
     <main className="container-fluid">
       <HeroSection />
 
@@ -14,6 +15,8 @@ const Home = () => {
         <PopularCategoriesSection />
         <ProductCardHome />
         <WhyChooseUs /> {/* إضافة المكون هنا */}
+        <Fcomp />
+        <Scomp />
       </div>
     </main>
   );
