@@ -2,7 +2,8 @@ import React from "react";
 import HeroSection from "../components/HeroSection";
 import PopularCategoriesSection from "../components/PopularCategoriesSection";
 import ProductCardHome from "../components/ProductCardHome";
-
+import Fcomp from "../components/Fcomp"
+import Scomp from "../components/Scomp"
 const Home = () => {
   return (
     <main className="container-fluid">
@@ -10,6 +11,9 @@ const Home = () => {
       <div className="container-sm">
         <PopularCategoriesSection />
         <ProductCardHome />
+        <Fcomp />
+        <Scomp />
+
       </div>
     </main>
   );

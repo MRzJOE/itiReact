@@ -5,6 +5,8 @@ import ReactDOM from "react-dom/client";
 import "./styles/index.css";
 import "./styles/signup.css";
 import "./styles/details.css";
+import "./styles/login.css"
+import "./styles/us.css"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
@@ -15,6 +17,7 @@ import { menuData } from "./data";
 import Products from "./pages/products";
 import { CartProvider } from "./utils/CartContext";
 import AboutUsPage from "./pages/AboutUsPage";
+import Signup from "./pages/Signup";
 
 console.log("Menu Data:", menuData);
 
@@ -30,6 +33,7 @@ root.render(
           <Route path="*" element={<Error404 />} />
           <Route path="blog" element={<Blog />} />
           <Route path="about-us" element={<AboutUsPage />} />
+          <Route path="signup" element={<Signup />} />
         </Route>
       </Routes>
     </BrowserRouter>
