@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/details.css";
+import logo from "../assets/logo.png";
 
 function Footer() {
   return (
@@ -8,7 +9,7 @@ function Footer() {
         <div className="row">
           <div className="col-12 col-md-3">
             <div className="d-flex align-items-start">
-              <img src="/assets/logo.png" alt="Logo" width="80" />
+              <img src={logo} alt="Logo" width="80" />
               <div>
                 <h5 className="mb-1">Foodzy</h5>
                 <small>A Treasure of Tastes</small>

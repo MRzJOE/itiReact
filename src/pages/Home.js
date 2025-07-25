@@ -14,8 +14,7 @@ const Home = () => {
       <div className="container-sm">
         <PopularCategoriesSection />
         <ProductCardHome />
-        <WhyChooseUs /> {/* إضافة المكون هنا */}
-        <Fcomp />
+        <WhyChooseUs />
         <Scomp />
       </div>
     </main>

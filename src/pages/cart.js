@@ -47,7 +47,7 @@ function Cart() {
                   <td colSpan="4" className="text-end fw-bold p-3 fs-3">
                     Sub Total:
                   </td>
-                  <td className="text-end fw-bold p-3 fs-4">
+                  <td className="text-end fw-bold p-3 fs-3">
                     $
                     {cartItems
                       .reduce(

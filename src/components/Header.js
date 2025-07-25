@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/details.css";
+import logo from "../assets/logo.png";
 
 function Header({ pageTitle }) {
   useEffect(() => {
@@ -94,7 +95,7 @@ function Header({ pageTitle }) {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/us">
-                AboutUs
+                Our Team
               </Link>
             </li>
           </ul>
@@ -105,7 +106,7 @@ function Header({ pageTitle }) {
       <div className="container-sm">
         <div className="header-container">
           <div className="logo">
-            <img src="/assets/logo.png" alt="Logo" />
+            <img src={logo} alt="Logo" />
             <div>
               <h2 style={{ margin: 0 }}>Foodzy</h2>
               <small>A Treasure of Tastes</small>
@@ -121,13 +122,12 @@ function Header({ pageTitle }) {
           </div>
 
           <div className="header-icons">
-            <Link to='/Signup'>Account</Link>
+            <Link to="/Signup">Account</Link>
             <Link to="/cart">🛒 Cart</Link>
           </div>
         </div>
       </div>
 
-      
       <div className="page-title mb-5">{pageTitle}</div>
     </header>
   );

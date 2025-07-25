@@ -15,22 +15,27 @@ function ProductsCart(props) {
     <Fragment>
       <tr>
         <td className="align-middle">
-          <div className="d-flex align-items-center">
-            <img
-              className="me-2 object-fit-fill border rounded p-0"
-              style={{ width: "70px", height: "70px" }}
-              src={props.image}
-              alt={props.name}
-            />
-            <span>{props.name}</span>
+          <div className="d-flex align-items-center ">
+            <div className="d-flex align-items-center justify-content-center">
+              <img
+                className="me-2 object-fit-fill border rounded p-0"
+                style={{ width: "70px", height: "70px" }}
+                src={props.image}
+                alt={props.name}
+              />
+              <span>{props.name}</span>
+            </div>
           </div>
         </td>
-        <td className="text-center align-middle">
-          <div id="itemPrice" className="d-flex align-items-center">
+        <td className="align-middle text-center">
+          <div
+            id="itemPrice"
+            className="d-flex align-items-center justify-content-center"
+          >
             ${props.price.toFixed(2)}
           </div>
         </td>
-        <td className="align-middle">
+        <td className="text-center align-middle">
           <div className="bg-white d-flex justify-content-center align-items-center border rounded-2 border-0">
             <button
               className="btn btn-sm"

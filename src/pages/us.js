@@ -1,6 +1,9 @@
 import React from "react";
 import "../styles/us.css";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+import constructor from "../assets/images/constructor.png";
+import work from "../assets/images/work.jpg";
 
 const TeamPage = () => {
   return (
@@ -12,7 +15,7 @@ const TeamPage = () => {
       </div>
 
       <div className="section-header">
-        <img src="/assets/logo.png" className="diamond-image" alt="Logo" />
+        <img src={logo} className="diamond-image" alt="Logo" />
         <br />
         <div className="orange-bar">
           <h2 style={{ backgroundColor: "#f44336", color: "white" }}>TEAM MEMBERS</h2>
@@ -22,7 +25,7 @@ const TeamPage = () => {
       <div className="top-member">
         <div className="member">
           <div className="image-placeholder">
-            <img src="/assets/constructor.png" alt="Constructor" />
+            <img src={constructor} alt="Constructor" />
           </div>    
           <h3>mahmoud abdulhamid</h3>
           <p className="position">our constructor</p>
@@ -41,7 +44,7 @@ const TeamPage = () => {
       <div className="bottom-members">
         <div className="member">
           <div className="image-placeholder">
-            <img src="/assets/work.jpg" alt="Mohamed" />
+            <img src={work} alt="Mohamed" />
           </div>
           <h3>MOHAMED ELWAKIL</h3>
           <p className="position">Team Member</p>
@@ -52,7 +55,7 @@ const TeamPage = () => {
 
         <div className="member">
           <div className="image-placeholder">
-            <img src="/assets/work.jpg" alt="Jhon" />
+            <img src={work} alt="Jhon" />
           </div>
           <h3>JHON EZZAT</h3>
           <p className="position">Team Member</p>
@@ -63,7 +66,7 @@ const TeamPage = () => {
 
         <div className="member">
           <div className="image-placeholder">
-            <img src="/assets/work.jpg" alt="Yasser" />
+            <img src={work} alt="Yasser" />
           </div>
           <h3>MOHAMED YASSER</h3>
           <p className="position">Team Member</p>
@@ -74,7 +77,7 @@ const TeamPage = () => {
 
         <div className="member">
           <div className="image-placeholder">
-            <img src="/assets/work.jpg" alt="Abdullah" />
+            <img src={work} alt="Abdullah" />
           </div>
           <h3>ABDULLAH MOHAMED</h3>
           <p className="position">Team Member</p>

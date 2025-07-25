@@ -1,12 +1,16 @@
 import React from "react";
 import "../styles/index.css"; // تأكد من وجود الملف ده
+import img0 from "../assets/0.png";
+import img1 from "../assets/1.png";
+import img2 from "../assets/2.png";
+import img3 from "../assets/3.png";
 
 const WhyChooseUsSection = () => {
   return (
     <div className="why-container">
       <div className="why-imgdiv">
         <img
-          src="../assets/0.png"
+          src={img0}
           alt="Why Choose Us"
           className="why-img"
         />
@@ -17,7 +21,7 @@ const WhyChooseUsSection = () => {
 
         <div className="why-superdiv">
           <div className="why-icon">
-            <img src="../assets/1.png" alt="Convenience Icon" />
+            <img src={img1} alt="Convenience Icon" />
           </div>
           <div className="why-paragraphs">
             <h3>Convenient and Reliable</h3>
@@ -30,7 +34,7 @@ const WhyChooseUsSection = () => {
 
         <div className="why-superdiv">
           <div className="why-icon">
-            <img src="../assets/2.png" alt="Variety Icon" />
+            <img src={img2} alt="Variety Icon" />
           </div>
           <div className="why-paragraphs">
             <h3>Variety of Options</h3>
@@ -43,7 +47,7 @@ const WhyChooseUsSection = () => {
 
         <div className="why-superdiv">
           <div className="why-icon">
-            <img src="../assets/3.png" alt="Burger Icon" />
+            <img src={img3} alt="Burger Icon" />
           </div>
           <div className="why-paragraphs">
             <h3>Eat Burger</h3>
