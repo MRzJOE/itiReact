@@ -20,7 +20,8 @@ function Layout() {
         return "About Us";
       case "/blog":
         return "Blog Details";
- 
+      case "/Signup":
+        return "Sign Up";
       default:
         return "";
     }
