@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SignupForm from './SignupForm';
 import LoginForm from './LoginForm';
 import { useNavigate } from 'react-router-dom';
@@ -35,7 +35,7 @@ function Signup() {
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (isLoggedIn) {
       navigate('/');
     }
@@ -47,7 +47,7 @@ function Signup() {
       {currentForm === 'signup' ? (
         <>
           <SignupForm onSignup={handleSignup} />
-          <p style={{ textAlign: 'center' }}>
+          <p style={{ textAlign: 'center'}}>
             Already have an account?{' '}
             <button onClick={() => setCurrentForm('login')}>Login</button>
           </p>
