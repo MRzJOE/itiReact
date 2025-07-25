@@ -7,7 +7,7 @@ import "./styles/signup.css";
 import "./styles/details.css";
 import "./styles/login.css";
 import "./styles/us.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Error404 from "./pages/Error404";
@@ -25,7 +25,7 @@ console.log("Menu Data:", menuData);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <CartProvider>
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home name="" />} />
@@ -38,6 +38,6 @@ root.render(
           <Route path="signup" element={<Signup />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   </CartProvider>
 );
