@@ -2,28 +2,42 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/details.css";
 
-function Header() {
+function Header({ pageTitle }) {
   useEffect(() => {
-    const mobileSearchBar = document.getElementById("mobileSearchBar");
+    const searchBar = document.getElementById("searchBar");
+    const searchIcon = document.getElementById("searchIcon");
     const showBtn = document.getElementById("searchShowBtn");
     const hideBtn = document.getElementById("searchHideBtn");
 
-    if (showBtn && hideBtn && mobileSearchBar) {
-      showBtn.addEventListener("click", () => {
-        mobileSearchBar.style.display = "block";
-      });
-
-      hideBtn.addEventListener("click", () => {
-        mobileSearchBar.style.display = "none";
-      });
+    function toggleSearchBar() {
+      if (window.innerWidth < 768) {
+        searchBar.style.display = "none";
+        searchIcon.style.display = "block";
+        showBtn.style.display = "inline-block";
+        hideBtn.style.display = "none";
+      } else {
+        searchBar.style.display = "flex";
+        searchIcon.style.display = "none";
+      }
     }
 
-    // Cleanup event listeners
+    toggleSearchBar();
+    window.addEventListener("resize", toggleSearchBar);
+
+    showBtn.addEventListener("click", () => {
+      searchBar.style.display = "flex";
+      showBtn.style.display = "none";
+      hideBtn.style.display = "inline-block";
+    });
+
+    hideBtn.addEventListener("click", () => {
+      searchBar.style.display = "none";
+      showBtn.style.display = "inline-block";
+      hideBtn.style.display = "none";
+    });
+
     return () => {
-      if (showBtn && hideBtn) {
-        showBtn.removeEventListener("click", () => {});
-        hideBtn.removeEventListener("click", () => {});
-      }
+      window.removeEventListener("resize", toggleSearchBar);
     };
   }, []);
 
@@ -57,31 +71,30 @@ function Header() {
           className="collapse navbar-collapse justify-content-center"
           id="mobileNav"
         >
-          <ul className="navbar-nav mx-auto">
+          <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link px-3 py-2" to="/">
+              <Link className="nav-link" to="/">
                 Home
               </Link>
             </li>
-
             <li className="nav-item">
-              <Link className="nav-link px-3 py-2" to="/Products">
+              <Link className="nav-link" to="/Products">
                 Products
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link px-3 py-2" to="/about-us">
+              <Link className="nav-link" to="/about-us">
                 About Us
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link px-3 py-2" to="/blog">
+              <Link className="nav-link" to="/blog">
                 Blog
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link px-3 py-2" to="/us">
-                US
+              <Link className="nav-link" to="/us">
+                AboutUs
               </Link>
             </li>
           </ul>
@@ -113,6 +126,9 @@ function Header() {
           </div>
         </div>
       </div>
+
+      
+      <div className="page-title mb-5">{pageTitle}</div>
     </header>
   );
 }

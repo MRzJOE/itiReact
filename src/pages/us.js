@@ -59,7 +59,7 @@ const TeamPage = () => {
           <div className="member-details">
             <p>The best when it comes to javascript made the cart page</p>
           </div>
-        </div>
+        </div>-
 
         <div className="member">
           <div className="image-placeholder">

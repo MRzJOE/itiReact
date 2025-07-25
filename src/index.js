@@ -5,6 +5,7 @@ import ReactDOM from "react-dom/client";
 import "./styles/index.css";
 import "./styles/signup.css";
 import "./styles/details.css";
+import "./styles/us.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
@@ -30,6 +31,7 @@ root.render(
           <Route path="Cart" element={<Cart />} />
           <Route path="*" element={<Error404 />} />
           <Route path="blog" element={<Blog />} />
+      <Route path="us" element={<TeamPage />} />
           <Route path="about-us" element={<AboutUsPage />} />
           <Route path="us" element={<TeamPage />} />
         </Route>

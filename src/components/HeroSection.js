@@ -4,7 +4,9 @@ import roastTurkeyImage from '../assets/images/Turkey.png';
 
 const HeroSection = () => {
   return (
+    
     <section className={styles.heroSection} style={{ backgroundImage: `url(${roastTurkeyImage})` }}>
+      
       <div className={styles.overlay}></div>
       <div className={styles.heroContent}>
       </div>

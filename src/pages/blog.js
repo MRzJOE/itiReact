@@ -1,9 +1,13 @@
 import React from "react";
 import "../styles/details.css";
+import { Link } from "react-router-dom";
+
 
 const BlogDetails = () => {
   return (
+    
     <div className="container-sm">
+      
       <div className="main-content">
         <img src="../assets/salad.jpg" className="blog-image" alt="Salad" />
         <div className="meta">By Admin | 07 Comments | Date: 09.07.2024</div>
@@ -33,19 +37,21 @@ const BlogDetails = () => {
             <strong>John Martin:</strong> Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Asperiores officiis magni explicabo fuga molestiae!
           </p>
+          
         </div>
 
         <div className="tags">
           <strong>Tags:</strong> Catalog, Appetizer, Meat Food
         </div>
-
-        <div className="pagination">
-          <button>1</button>
-          <button>2</button>
-          <button>Next</button>
-        </div>
+        
       </div>
+       <div className="pagination">
+      <Link to="/us">
+        <button>NEXT</button>
+      </Link>
     </div>
+    </div>
+    
   );
 };
 
