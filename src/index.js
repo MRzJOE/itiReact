@@ -31,9 +31,8 @@ root.render(
           <Route path="Cart" element={<Cart />} />
           <Route path="*" element={<Error404 />} />
           <Route path="blog" element={<Blog />} />
-      <Route path="us" element={<TeamPage />} />
-          <Route path="about-us" element={<AboutUsPage />} />
           <Route path="us" element={<TeamPage />} />
+          <Route path="about-us" element={<AboutUsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
